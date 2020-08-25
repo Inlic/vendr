@@ -10,9 +10,21 @@ class VendingMachineService{
     vendingmachine.transactionMoney += 0.25
   }
 
+  makeChange(){
+    let vendingmachine = STORE.State.vendingmachine
+    let change = vendingmachine.transactionMoney
+    vendingmachine.transactionMoney -= change
+    vendingmachine.totalMoney -= change
+    console.log("You refunded your money")
+  }
+
   buyChips(){
     let price = STORE.State.chips.cost
     let money = STORE.State.vendingmachine.transactionMoney
+    let amount = STORE.State.chips.amount
+    if(amount == 0){
+      return console.log("Out of Chips")
+    }
     if(money >= price){
       console.log(`Bought ${STORE.State.chips.name}`)
       STORE.State.vendingmachine.transactionMoney -= price
@@ -24,6 +36,10 @@ class VendingMachineService{
   buySoda(){
     let price = STORE.State.soda.cost
     let money = STORE.State.vendingmachine.transactionMoney
+    let amount = STORE.State.soda.amount
+    if(amount == 0){
+      return console.log("Out of Soda")
+    }
     if(money >= price){
       console.log(`Bought ${STORE.State.soda.name}`)
       STORE.State.vendingmachine.transactionMoney -= price

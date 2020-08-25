@@ -22,6 +22,10 @@ export default class VendingMachineController {
     VendingMachineService.addQuarter()
     _drawVend()
    }
+   makeChange(){
+     VendingMachineService.makeChange()
+     _drawVend()
+   }
    buyChips(){
     VendingMachineService.buyChips()
     _drawVend()

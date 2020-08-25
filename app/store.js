@@ -7,7 +7,7 @@ let _state = {
   vendingmachine: new VendMachine("/assets/vending-machine.png",0,0),
   
   /**@type {Chips} */
-  chips: new Chips("doritos","/assets/doritos.jpg",1.25,5),
+  chips: new Chips("Doritos","/assets/doritos.jpg",1.25,5),
 
   /**@type {Soda} */
   soda: new Soda("Mountain Dew","/assets/mtndew.jpg",1.00,5)
