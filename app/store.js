@@ -1,9 +1,8 @@
-import Value from "./Models/Value.js";
+import VendingMachine from "./Models/VendMachine.js";
 
 let _state = {
-  activeValue: new Value({ title: "Value" }),
-  /** @type {Value[]} */
-  values: []
+  /** @type {VendingMachine} */
+  vendingmachine: new VendingMachine('Snacks','/assets/vending-maching.png',[{name: "doritos",price: 1.50},{name: "mountain dew", price: 1.00}],0, 0)
 };
 
 class Store {
