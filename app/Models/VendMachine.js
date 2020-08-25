@@ -21,8 +21,8 @@ export default class VendMachine{
     <div class="card offset-3">
       <img class="card-img-top" src="${this.img}" alt="">
       <div class="card-body">
-          <h3>Total Money Earned By Vending Machine: ${this.totalMoney}</h3>
-          <h3 class="card-title">Total Money Added this Transaction: ${this.transactionMoney}</h3>
+          <h3>Total Money Earned By Vending Machine: $${this.totalMoney.toFixed(2)}</h3>
+          <h3 class="card-title">Total Money Added this Transaction: $${this.transactionMoney.toFixed(2)}</h3>
           <button onclick="app.vendingmachineController.addQuarter()">Add Quarter</button>
           <button onclick="app.vendingmachineController.makeChange()">Refund</button>
       </div>
