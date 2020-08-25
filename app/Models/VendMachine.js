@@ -28,6 +28,7 @@ export default class VendMachine{
       <img class="card-img-top" src="${this.img}" alt="">
       <div class="card-body">
           <h4 class="card-title">${this.type}</h4>
+          <button onclick="app.VendingMachineController.buy()">Buy</button>
       </div>
     </div>
     `

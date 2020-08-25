@@ -2,7 +2,7 @@ import VendingMachine from "./Models/VendMachine.js";
 
 let _state = {
   /** @type {VendingMachine} */
-  vendingmachine: new VendingMachine('Snacks','/assets/vending-maching.png',[{name: "doritos",price: 1.50},{name: "mountain dew", price: 1.00}],0, 0)
+  vendingmachine: new VendingMachine('Snacks','/assets/vending-machine.png',[{name: "doritos", amount: 5, price: 1.50},{name: "mountain dew", amount: 5, price: 1.00}],0, 0)
 };
 
 class Store {
