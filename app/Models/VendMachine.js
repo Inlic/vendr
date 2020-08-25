@@ -18,7 +18,7 @@ export default class VendMachine{
 
   get Template(){
     return `
-    <div class="card">
+    <div class="card offset-3">
       <img class="card-img-top" src="${this.img}" alt="">
       <div class="card-body">
           <h3>Total Money Earned By Vending Machine: ${this.totalMoney}</h3>

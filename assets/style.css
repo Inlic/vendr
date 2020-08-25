@@ -1,5 +1,13 @@
 /* Styles */
 
-img {
-  width: 400px;
+body{
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
 }
+
+img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
