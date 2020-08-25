@@ -19,7 +19,6 @@ export default class VendingMachineController {
      _drawVend()
    }
    addQuarter(){
-     debugger
     VendingMachineService.addQuarter()
     _drawVend()
    }

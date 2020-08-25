@@ -15,18 +15,22 @@ class VendingMachineService{
     let money = STORE.State.vendingmachine.transactionMoney
     if(money >= price){
       console.log(`Bought ${STORE.State.chips.name}`)
-      money -= price
-    }
+      STORE.State.vendingmachine.transactionMoney -= price
+      STORE.State.chips.amount--
+    } else {
     console.log("Not enough money")
+    }
   }
   buySoda(){
     let price = STORE.State.soda.cost
     let money = STORE.State.vendingmachine.transactionMoney
     if(money >= price){
       console.log(`Bought ${STORE.State.soda.name}`)
-      money -= price
-    }
+      STORE.State.vendingmachine.transactionMoney -= price
+      STORE.State.soda.amount--
+    } else {
     console.log("Not enough money")
+    }
   }
 }
 

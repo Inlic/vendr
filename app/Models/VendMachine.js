@@ -12,8 +12,8 @@ export default class VendMachine{
     totalMoney
   ){
     this.img = img
-    this.transactionMoney = 0
-    this.totalMoney = 0
+    this.transactionMoney = transactionMoney
+    this.totalMoney = totalMoney
   }
 
   get Template(){
