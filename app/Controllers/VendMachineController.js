@@ -6,6 +6,10 @@ import STORE from "../store.js"
 function _drawVend(){
   let vend = STORE.State.vendingmachine
   document.getElementById('vending').innerHTML = vend.Template
+  let chips = STORE.State.chips
+  document.getElementById('chips').innerHTML = chips.Template
+  let soda = STORE.State.soda
+  document.getElementById('soda').innerHTML = soda.Template
 }
 
 //PUBLIC
@@ -15,6 +19,7 @@ export default class VendingMachineController {
      _drawVend()
    }
    addQuarter(){
+     debugger
     VendingMachineService.addQuarter()
     _drawVend()
    }
@@ -26,6 +31,5 @@ export default class VendingMachineController {
     VendingMachineService.buySoda()
     _drawVend()
    }
-
 
 }

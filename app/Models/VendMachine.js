@@ -11,11 +11,9 @@ export default class VendMachine{
     transactionMoney,
     totalMoney
   ){
-    this.type = type
     this.img = img
-    this.inventory = inventory
-    this.transactionMoney = transactionMoney
-    this.totalMoney = totalMoney
+    this.transactionMoney = 0
+    this.totalMoney = 0
   }
 
   get Template(){
@@ -24,7 +22,7 @@ export default class VendMachine{
       <img class="card-img-top" src="${this.img}" alt="">
       <div class="card-body">
           <h4 class="card-title">${this.transactionMoney}</h4>
-          <button onclick="app.VendingMachineController.addQuarter()>Add Quarter</button>
+          <button onclick="app.vendingmachineController.addQuarter()">Add Quarter</button>
       </div>
     </div>
     `

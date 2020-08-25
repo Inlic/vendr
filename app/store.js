@@ -4,7 +4,7 @@ import VendMachine from "./Models/VendMachine.js";
 
 let _state = {
   /**@type {VendMachine} */
-  vendingmachine: new VendMachine("/assets/vending-maching.png",0,0),
+  vendingmachine: new VendMachine("/assets/vending-machine.png",0,0),
   
   /**@type {Chips} */
   chips: new Chips("doritos","/assets/doritos.jpg",1.25,5),

@@ -24,8 +24,8 @@ export default class Chips{
       <div class="card">
         <img class="card-img-top" src="${this.img}" alt="">
         <div class="card-body">
-            <h4 class="card-title">${this.type}</h4>
-            <button onclick="app.VendingMachineController.buy()">Buy</button>
+            <h4 class="card-title">${this.name}</h4>
+            <button onclick="app.vendingmachineController.buyChips()">Buy</button>
             <p>Cost: ${this.cost}</p>
             <p>Amount: ${this.amount}</p>
         </div>
