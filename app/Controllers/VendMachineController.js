@@ -14,4 +14,18 @@ export default class VendingMachineController {
    constructor(){
      _drawVend()
    }
+   addQuarter(){
+    VendingMachineService.addQuarter()
+    _drawVend()
+   }
+   buyChips(){
+    VendingMachineService.buyChips()
+    _drawVend()
+   }
+   buySoda(){
+    VendingMachineService.buySoda()
+    _drawVend()
+   }
+
+
 }

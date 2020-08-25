@@ -4,6 +4,30 @@ class VendingMachineService{
   constructor(){
     console.log("Creating Vending Machine Service",STORE)
   }
+  addQuarter(){
+    let vendingmachine = STORE.State.vendingmachine
+    vendingmachine.totalMoney += 0.25
+    vendingmachine.transactionMoney += 0.25
+  }
+
+  buyChips(){
+    let price = STORE.State.chips.cost
+    let money = STORE.State.vendingmachine.transactionMoney
+    if(money >= price){
+      console.log(`Bought ${STORE.State.chips.name}`)
+      money -= price
+    }
+    console.log("Not enough money")
+  }
+  buySoda(){
+    let price = STORE.State.soda.cost
+    let money = STORE.State.vendingmachine.transactionMoney
+    if(money >= price){
+      console.log(`Bought ${STORE.State.soda.name}`)
+      money -= price
+    }
+    console.log("Not enough money")
+  }
 }
 
 const SERVICE = new VendingMachineService();

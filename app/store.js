@@ -1,8 +1,17 @@
-import VendingMachine from "./Models/VendMachine.js";
+import Chips from "../app/Models/Chips.js"
+import Soda from "../app/Models/Soda.js"
+import VendMachine from "./Models/VendMachine.js";
 
 let _state = {
-  /** @type {VendingMachine} */
-  vendingmachine: new VendingMachine('Snacks','/assets/vending-machine.png',[{name: "doritos", amount: 5, price: 1.50},{name: "mountain dew", amount: 5, price: 1.00}],0, 0)
+  /**@type {VendMachine} */
+  vendingmachine: new VendMachine("/assets/vending-maching.png",0,0),
+  
+  /**@type {Chips} */
+  chips: new Chips("doritos","/assets/doritos.jpg",1.25,5),
+
+  /**@type {Soda} */
+  soda: new Soda("Mountain Dew","/assets/mtndew.jpg",1.00,5)
+
 };
 
 class Store {
