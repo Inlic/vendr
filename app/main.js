@@ -1,7 +1,7 @@
-import ValuesController from "./Controllers/ValuesController.js";
+import VendingMachineController from "./Controllers/VendMachineController.js";
 
 class App {
-  valuesController = new ValuesController();
+  vendingmachineController = new VendingMachineController();
 }
 
 window["app"] = new App();
