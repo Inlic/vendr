@@ -13,6 +13,7 @@ function _drawVend(){
 }
 
 //PUBLIC
+//includes user triggred actions
 
 export default class VendingMachineController {
    constructor(){
